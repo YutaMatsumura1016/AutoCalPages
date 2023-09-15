@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初期設定</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>初期設定</h1>
+    </header>
+    <div class="container">
+        <h2>☆はじめて使用する際にやること</h2>
+        <h2>1. Googleカレンダーにアクセス</h2>
+        <p style="background-color:#dcdcdc"><a href="https://calendar.google.com/calendar">Googleカレンダー</a>にアクセスし、ログインします。</p>
+        
+        <h2>2. 共有設定</h2>
+        <p style="background-color:#dcdcdc">予定を自動登録するため、自動登録botのユーザとカレンダーを共有します。<br>この設定により、他人(作者含む)が予定を取得できるようになることはありません。</p>
+        <p style="background-color:#e6e6fa">① 設定を開きます</p>
+        <img src="images/settei.png" alt="設定を開く">
+        <p style="background-color:#e6e6fa">② 「マイカレンダーの設定」から、自分のアカウント名を選択します。</p>
+        <img src="images/myCalendar.png" alt="共有設定">
+        <p style="background-color:#e6e6fa">③ 「特定のユーザーまたはグループと共有する」から、「ユーザーやグループを追加」を選択します。</p>
+        <img src="images/share.png" alt="ユーザーを追加">
+        <p style="background-color:#e6e6fa">④ 以下のメールアドレスを追加し、「権限」で「予定の表示」を選択します。</p>
+        <div class="adress_container">
+            <button type="button" class="copy_bt"><img src="/images/copy.png" height ="32" width="32" /></button>
+            <p class="adress">autocalendaraccount@autocalender-397211.iam.gserviceaccount.com</p>
+        </div>
+        <img src="images/menu.png" alt="権限設定">
+        
+        <h2>以上で設定は終了です。アプリケーションをお使いいただけます。</h2>
+    </div>
+</body>
+
+    <script>
+        var adress = document.querySelector(".adress");
+        var adress_copy = adress.textContent;//コピーさせたいテキスト情報を取得
+
+        var copy = document.querySelector('.copy_bt');
+            copy.addEventListener('click', () =>{
+                navigator.clipboard.writeText(adress_copy);//クリップボードにコピー
+            });
+    </script>
+
+</html>

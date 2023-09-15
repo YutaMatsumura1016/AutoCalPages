@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4cd2bf;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 画像のスタイル */
+img {
+    max-width: 100%;
+    height: auto;
+    width: 65%;
+    display: block;
+    margin: 10px auto; /* 画像を中央に配置 */
+}
+
+.adress_container {
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+}
+.copy_bt {
+	padding: 10px;
+    background: transparent;
+    border:none;
+}
