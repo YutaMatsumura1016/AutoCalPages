@@ -27,28 +27,74 @@ h1 {
 h2 {
     font-size: 20px;
 }
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* 画像のスタイル */
 img {
     max-width: 100%;
     height: auto;
     width: 65%;
     display: block;
-    margin: 10px auto; /* 画像を中央に配置 */
+    margin: 10px auto; 
+}
+
+.title_container{
+    background-color: #eeeeee;
+    border-bottom: solid 3px #cccccc;
+    border-left: solid 5px #eb88a5;
+    height: 60px;
+    margin-bottom: 7%;
+}
+.title{
+    font-size: 24px;
+    margin: 4%;
+    top: 0%;
+    left: 0;
+    line-height: 60px;
+}
+
+.komidashi_container{
+    border-left: solid 4px #82a3cd;
+    margin-left: 3%;
+}
+.komidashi{
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+.p1{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 5%;
+    /* background-color:#dcdcdc; */
+}
+.p2{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color:#e6e6fa;
 }
 
 .adress_container {
 	display: flex;
-	column-gap: 20px;
-	align-items: center;
+    position: relative;
+    margin-left: 5%;
+}
+.p_container{
+    background-color: #eeeeee;
+    border-bottom: solid 3px #cccccc;
+    border-left: solid 5px #eb88a5;
+}
+.p_container p{
+    margin-left: 2%;
 }
 .copy_bt {
+    height: 50px; 
+    width: 50px;
 	padding: 10px;
     background: transparent;
     border:none;
+    position: absolute;
+    top: -2px;
+    left: -40px; 
+}
+.copy_bt:hover {
+    height: 55px; 
+    width:55px;
 }
