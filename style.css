@@ -32,7 +32,9 @@ img {
     height: auto;
     width: 65%;
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
+    margin-bottom: 10%;
+    border: 1px solid #eeeeee;
 }
 
 .title_container{
@@ -63,14 +65,23 @@ img {
     font-size: 16px;
     line-height: 1.5;
     margin-left: 5%;
-    /* background-color:#dcdcdc; */
 }
 .p2{
     font-size: 16px;
     line-height: 1.5;
-    background-color:#e6e6fa;
+    margin-left: 4%;
+    margin-right: 14%;
 }
 
+.image_container{
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #97afcc;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
 .adress_container {
 	display: flex;
     position: relative;
