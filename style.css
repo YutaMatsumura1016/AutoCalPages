@@ -6,10 +6,12 @@ body {
 }
 
 header {
-    background-color: #4cd2bf;
-    color: #fff;
+    background-color: #ffffff;
+    color: #190f0c;
+    border-bottom: 2px solid #cccccc;
     text-align: center;
-    padding: 10px;
+    height: auto;
+    padding: 5px;
 }
 
 .container {
@@ -27,7 +29,7 @@ h1 {
 h2 {
     font-size: 20px;
 }
-img {
+.images {
     max-width: 100%;
     height: auto;
     width: 65%;
@@ -52,6 +54,7 @@ img {
     line-height: 60px;
 }
 
+
 .komidashi_container{
     border-left: solid 4px #82a3cd;
     margin-left: 3%;
@@ -72,6 +75,11 @@ img {
     margin-left: 4%;
     margin-right: 14%;
 }
+.p3{
+    font-size: 12px;
+    text-align: center;
+
+}
 
 .image_container{
     color: #5d627b;
@@ -82,30 +90,44 @@ img {
     margin-right: 10%;
     margin-bottom: 5%;
 }
+.adress_container_parent{
+    display: flex;
+    justify-content: center;
+}
 .adress_container {
-	display: flex;
     position: relative;
-    margin-left: 5%;
+    display: block;
+    width: 80%;
 }
 .p_container{
-    background-color: #eeeeee;
-    border-bottom: solid 3px #cccccc;
-    border-left: solid 5px #eb88a5;
+    background-color: #dadce0;
+    height: 30px;
+    width: 90%;
+    border-radius: 15px;
+    white-space: nowrap;
+	overflow: hidden;
 }
 .p_container p{
-    margin-left: 2%;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 0px;
+    text-align: left;
 }
-.copy_bt {
-    height: 50px; 
-    width: 50px;
-	padding: 10px;
+.copy_bt{
+    max-width: 100%;
+    width: 5%;
+    height: auto;
+    /* display: block; */
+    /* padding: 10px; */
     background: transparent;
-    border:none;
+    border: none;
     position: absolute;
-    top: -2px;
-    left: -40px; 
+    top: 0px;
+    left: -45px; 
 }
 .copy_bt:hover {
-    height: 55px; 
-    width:55px;
+    height: 5px; 
+    width:5px;
+    border: none;
 }
