@@ -41,13 +41,11 @@
         </div>
         <div class="image_container">
             <p class="p2">④ 以下のメールアドレスを追加し、<br>&nbsp;&nbsp;「権限」で「予定の表示」を選択します。</p>
-            <div class="adress_container_parent">
-                <div class="adress_container">
-                    <button type="button" class="copy_bt"><img src="/images/copy.png"/></button>
-                    <div class="p_container">
-                        <p>autocalendaraccount@autocalender-397211.iam.gserviceaccount.com</p>
-                    </div>
-                </div>
+            <div class="adress_container">
+                <button class="copy_bt" onclick="copyToClipboard()">
+                  <img src="images/copy.png" alt="Button Image" style="width: 18px; height: auto;">
+                </button>
+                <span class="p_container" id="copy_text">autocalendaraccount@autocalender-397211.iam.gserviceaccount.com</span>
             </div>
             <img class="images" src="images/menu.png" alt="権限設定">
         </div>
@@ -60,13 +58,15 @@
 </body>
 
     <script>
-        var adress = document.querySelector(".adress");
-        var adress_copy = adress.textContent;
-
-        var copy = document.querySelector('.copy_bt');
-            copy.addEventListener('click', () =>{
-                navigator.clipboard.writeText(adress_copy);
-            });
+        function copyToClipboard() {
+            var copyText = document.getElementById("copy_text");
+            var textArea = document.createElement("textarea");
+            textArea.value = copyText.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("Copy");
+            textArea.remove();
+        }           
     </script>
 
 </html>

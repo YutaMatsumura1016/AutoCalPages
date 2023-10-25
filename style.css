@@ -90,43 +90,37 @@ h2 {
     margin-right: 10%;
     margin-bottom: 5%;
 }
-.adress_container_parent{
+/* .adress_container_parent{
     display: flex;
     justify-content: center;
-}
+}*/
 .adress_container {
-    position: relative;
-    display: block;
-    width: 80%;
+    display: flex;
+    align-items: center;
 }
 .p_container{
-    background-color: #dadce0;
-    height: 30px;
-    width: 90%;
+    margin-left: 10px; 
+    margin-right: 10%;
     border-radius: 15px;
+    padding: 1%;
     white-space: nowrap;
 	overflow: hidden;
-}
-.p_container p{
+    background-color: #dadce0;
     font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 0px;
-    text-align: left;
 }
 .copy_bt{
-    position: absolute;
-    max-width: 100%;
-    width: 5%;
-    height: auto;
-    top: 0px;
-    left: -45px; 
-    background: transparent;
+    margin-left: 10%;
+    background-color: transparent;
     border: none;
+    padding: 0;   
+}
+.copy_bt image{
+    width: 25px;
+    height: auto;
 }
 .copy_bt:hover {
-    height: 5px; 
-    width:5px;
-    border: none;
     cursor: pointer;
+    border: 1px solid #cccccc;
+    margin-right: -2px;
+    border-radius: 20%;
 }
