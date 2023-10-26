@@ -22,13 +22,6 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 20px;
-}
 .images {
     max-width: 100%;
     height: auto;
@@ -90,10 +83,6 @@ h2 {
     margin-right: 10%;
     margin-bottom: 5%;
 }
-/* .adress_container_parent{
-    display: flex;
-    justify-content: center;
-}*/
 .adress_container {
     display: flex;
     align-items: center;
@@ -123,4 +112,38 @@ h2 {
     border: 1px solid #cccccc;
     margin-right: -2px;
     border-radius: 20%;
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        padding: 7px;
+    }
+    .images {
+        width: 90%;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .komidashi{
+        font-size: 20px;
+        margin-left: 1%;
+    } 
+    .p2{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-left: 4%;
+        margin-right: 4%;
+    }   
+    .image_container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .p_container{
+        margin-left: 5px; 
+        margin-right: 5%;
+        border-radius: 10px;
+    }
+    .copy_bt{
+        margin-left: 5%;  
+    }
 }
